@@ -620,3 +620,9 @@ footer .info-footer .info-footer-content .col_ver_com .list_ver_com>li>a:hover {
 .show_menu_full .list_utility > li a:hover {
     color: #1b95e0;
 }
+.bg-white {
+    background: #fff;
+}
+.p-15 {
+    padding: 15px;
+}
