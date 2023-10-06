@@ -9,4 +9,894 @@
 }
 .ad_more_info {
     display: flex;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #e9e9e9;
+}
+.box-pick {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.w140 {
+    width: 140px;
+}
+.flex-1 {
+    flex: 1;
+}
+.box_utility {
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    width: 100%;
+}
+.box_utility .list_utility {
+    background-color: #fff;
+    border-radius: 0 0 30px 0;
+    padding: 10px 0 5px;
+    overflow: hidden;
+    -webkit-box-shadow: -4px -4px 15px 0 rgba(0,0,0,.1) inset;
+    box-shadow: -4px -4px 15px 0 rgba(0,0,0,.1) inset;
+}
+.box_utility .list_tournamens {
+    background-color: #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 10px 0 5px;
+    overflow: hidden;
+    -webkit-box-shadow: -4px -4px 15px 0 rgba(0,0,0,.1) inset;
+    box-shadow: -4px -4px 15px 0 rgba(0,0,0,.1) inset;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.box_utility .list_utility>li {
+    display: block;
+    padding: 0 15px;
+}
+.box_utility .list_utility>li>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f3f3f3;
+    color: #292929;
+    text-transform: uppercase;
+    position: relative;
+}
+.box_utility .list_utility>li>a>i, .box_utility .list_utility>li>a>img {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    margin-right: 7px;
+}
+.box_utility .list_utility>li>a .spn_number_news {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background-color: #e64c3c;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+}
+.box_utility .list_tournamens li {
+    display: block;
+}
+.box_utility .list_tournamens li a {
+    font-size: 10px;
+    padding: 7px 10px;
+    border-bottom: 1px solid #f3f3f3;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_utility .list_tournamens li a .league-logo {
+    margin-right: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.box_utility .list_tournamens li a .league-logo img {
+    max-width: 20px;
+}
+.box_utility .list_tournamens li a .league-title {
+    flex: 1 0 0;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.box_utility .list_tournamens li a .league-title:hover {
+    color: rgb(52, 203, 203);
+}
+.box-pick .flex-1 {
+    max-width: inherit !important;
+}
+.w100-200 {
+    width: calc(100% - 200px);
+}
+.box-pick .top-pick .cover .thumb {
+    display: block;
+}
+.box-pick .top-pick .cover .thumb img {
+    width: 100%;
+}
+.box-pick .top-pick .cover .content {
+    background: #f1f1f1;
+    padding: 15px;
+}
+.box-pick .top-pick .cover .content .title_cat {
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) -50px -864px no-repeat;
+    padding: 5px 4px 4px;
+    font-size: 9px;
+    color: #0d6eb7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.box-pick .top-pick .cover .content .sapo {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #666;
+    overflow: hidden;
+
+}
+.box-pick .top-pick .cover .content .title {
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    line-height: 1.35;
+}
+.box-pick .top-pick .cover .content .title:hover {
+    color: #0085de;
+}
+.title .special-line {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.45;
+    color: #0085de;
+}
+.status_live {
+    border: 1px solid #f40000;
+    display: inline-block;
+    line-height: 9px;
+    padding: 2px 4px 0!important;
+    border-radius: 2px;
+    width: 31px;
+}
+.status_live .p {
+    text-transform: uppercase;
+    animation: live 4s steps(12) infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f40000;
+    font-size: 10px;
+    line-height: .88;
+    vertical-align: top;
+}
+@keyframes live {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    55%, 65%, 75% {
+        opacity: 1;
+    }
+    60%, 70% {
+        opacity: 0;
+    }
+    80% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+.box-pick .top-pick .scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    border-bottom: 3px solid #f5f5f5;
+}
+.w200 {
+    width: 200px;
+}
+.scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+    border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-track-piece {
+    background: rgba(229,229,229,.37);
+}
+.pick_right li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.pick_right li a {
+    font-size: 14px;
+    line-height: 1.44;
+    font-weight: normal;
+}
+.pick_right li a:hover {
+    color: #0085de;
+}
+.box-pick .top-pick .pick_right li a .special-line {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.45;
+    color: #0085de;
+}
+.box-pick .top-pick {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.box-pick .top-pick .pick_right {
+    padding-left: 15px;
+}
+.box-pick .bot-pick ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.box-pick .bot-pick ul li {
+    flex: 0 32%;
+}
+.box-pick .bot-pick ul li .content .title_cat {
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) -50px -864px no-repeat;
+    padding: 5px 4px 4px;
+    font-size: 9px;
+    color: #0d6eb7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.box-pick .bot-pick ul li .content .title {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    margin-bottom: 0;
+}
+.box-pick .bot-pick ul li .content .title:hover {
+    color: #0085de;
+}
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+.flex-1 {
+    max-width: 790px !important;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+.w300 {
+    width: 300px;
+}
+.box_fix_ltd_euro .caption {
+    background: #bc0136;
+    background-size: cover;
+    padding: 10px 5px;
+    height: auto;
+    color: #fff;
+    border-radius: 0 0 0 0;
+    border-bottom: none;
+    overflow: inherit;
+}
+.box_schedule .caption {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.box_fix_ltd_euro.box_schedule .caption .title {
+    background: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+.box_fix_ltd_euro.box_schedule .caption .title.active:after, 
+.box_fix_ltd_euro.box_schedule .caption .title:hover:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #bc0136;
+    display: inline-block;
+    bottom: -16px;
+    left: 50%;
+    margin-left: -10px;
+}
+.box_fix_ltd_euro.box_schedule .content {
+    border-radius: 0;
+}
+.box_schedule .content {
+    border: 1px solid #efefef;
+    border-top: 0;
+    border-radius: 0 0 0 30px;
+    overflow: hidden;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.box_livescore .list_match {
+    display: block;
+}
+.box_livescore .list_match li.caption-days {
+    justify-content: flex-start;
+}
+.box_livescore .list_match li.caption-days .title {
+    color: #3a4e91;
+    padding: 0 5px;
+    border-bottom: 1px solid red;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    font-size: 13px;
+}
+.box_fix_ltd_euro .box_livescore .list_match li:nth-child(2n) {
+    background-color: #e4f4ff;
+}
+.box_livescore .list_match li:nth-child(2n) {
+    background-color: #f4f4f4;
+}
+.box_livescore .list_match li.caption-days {
+    justify-content: flex-end;
+    padding: 8px 0 0;
+}
+.box_livescore .list_match li.caption-days {
+    justify-content: flex-start;
+}
+.box_livescore .list_match li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+}
+.box_livescore .list_match li+li {
+    border-top: 1px solid #ececec;
+}
+.box_livescore .list_match li .group {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_livescore .list_match li .group .team-a {
+    flex-direction: row-reverse;
+}
+.box_livescore .list_match li .group .team {
+    overflow: hidden;
+    flex: 1 1 0;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.box_livescore .list_match li .group .score {
+    width: 70px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box_livescore .list_match li .group .team-a img {
+    margin-left: 4px;
+}
+.box_livescore .list_match li .group .team img {
+    max-width: 25px;
+    max-height: 25px;
+}
+.box_fix_ltd_euro .box_livescore .list_match li .group .team a {
+    font-size: 16px;
+}
+.box_livescore .list_match li .group .team-a a {
+    text-align: right;
+}
+.box_livescore .list_match li .group .team a {
+    font-size: 14px;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 24px;
+    flex: 1 0 0;
+}
+.box_livescore .list_match li .group .score a {
+    color: #254892;
+    font-weight: 700;
+    line-height: 24px;
+}
+.box_livescore .list_match li .group .team-b img {
+    margin-right: 4px;
+}
+.box_livescore .list_match li .more {
+    width: 30px;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 24px;
+}
+.status_live {
+    border: 1px solid #f40000;
+    display: inline-block;
+    line-height: 9px;
+    padding: 2px 4px 0!important;
+    border-radius: 2px;
+    width: 31px;
+}
+.status_live p {
+    text-transform: uppercase;
+    animation: live 4s steps(12) infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f40000;
+    font-size: 10px;
+    vertical-align: top;
+}
+.box_livescore .list_match li .more .name {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) 0 -395px no-repeat;
+}
+.text-center {
+    text-align: center;
+}
+.box_fix_ltd_euro.box_schedule .view-more-table {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bc0136;
+    line-height: 15px;
+    border: 1px solid #bc0136;
+    border-radius: 40px;
+    margin: 15px;
+}
+.bg_bxh {
+    background: url(https://thethao247.vn/frontend/events/asiad/img/bg_ltd_home.jpg);
+    background-position: 0;
+    background-size: cover;
+    text-align: center;
+    font-family: 'prompt', Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 10px;
+}
+.table-medal-seagames table, .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.table-medal-seagames table, .table-tshc {
+    border: 0!important;
+    background: #e7f5ff;
+    font-size: 13px;
+    position: relative;
+}
+.table-medal-seagames tbody tr:first-child, .bg-tshc {
+    background: #2d73ff;
+    color: #fff;
+}
+.table-medal-seagames table td, .table td, .table-medal-seagames table th, .table th {
+    padding: 6px 4px;
+    border-top: solid 1px #e0e0e0;
+}
+.table-medal-seagames table td, .table.table-tshc td, .table-medal-seagames table td, .table-tshc th {
+    border: 0!important;
+    border-top: solid 1px #b7d5eb!important;
+    vertical-align: middle;
+    text-align: center;
+}
+.table.table-tshc .link-clb-tshc {
+    text-align: left;
+    font-weight: bold;
+    line-height: 20px;
+    float: left;
+    color: #333;
+    text-decoration: none;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.ic-clb-tshc {
+    width: 23px;
+    float: left;
+    margin-right: 8px;
+    object-fit: cover;
+}
+.w360 {
+    width: 360px;
+}
+.box_latest .caption {
+    border-bottom: 1px solid #254892;
+    height: 22px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.box_latest .caption .title {
+    padding: 0 10px;
+    background-color: #0f408b;
+    position: relative;
+}
+.box_latest .caption .title:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 30%;
+    top: 0;
+    width: 200px;
+    box-sizing: border-box;
+    height: 23px;
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) left -839px no-repeat;
+}
+.box_latest .caption .title span {
+    z-index: 1;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    top: -5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+}
+.box_latest .content li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.box_latest .content li .thumb {
+    width: 124px;
+    margin-right: 12px;
+    position: relative;
+}
+.box_latest .content li .text {
+    flex: 1 0 0;
+}
+.box_latest .content li .text .title {
+    font-size: 15px;
+    line-height: 1.5;
+    display: block;
+    font-weight: 500;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.cat-style-1 .caption {
+    border-bottom: 1px solid #254892;
+    height: 22px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.cat-style-1 .caption .title {
+    padding: 0 10px;
+    background-color: #0f408b;
+    position: relative;
+}
+.cat-style-1 .caption .title:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 33%;
+    top: 0;
+    width: 200px;
+    box-sizing: border-box;
+    height: 23px;
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) left -839px no-repeat;
+}
+.cat-style-1 .caption .title span {
+    z-index: 1;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    top: -5px;
+    font-weight: 600;
+    display: inline-block;
+}
+.cat-style-1 .caption .more {
+    font-size: 10px;
+    line-height: 23px;
+    color: #254892;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.cat-style-1 .content .first_news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cat-style-1 .content .first_news .thumb {
+    flex: 0 48%;
+}
+.cat-style-1 .content .first_news .text {
+    flex: 0 48%;
+}
+.cat-style-1 .content .first_news .text .title {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    overflow: hidden;
+    line-height: 1.4;
+}
+.cat-style-1 .content .first_news .text .sapo {
+    overflow: hidden;
+    line-height: 1.4;
+}
+.cat-style-1 .content .list_news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cat-style-1 .content .list_news li {
+    flex: 0 48%;
+    margin-bottom: 2%;
+}
+.cat-style-1 .content .list_news li .thumb {
+    margin-bottom: 7.5px;
+}
+.cat-style-1 .content .list_news li .title {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    line-height: 1.4;
+    display: -webkit-box;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.box_trending .caption-2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #f40000;
+    bottom: 11px;
+}
+.box_trending .caption-2 {
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+}
+.box_trending .caption-2 .title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #f40000;
+    position: relative;
+    background: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 5px;
+}
+.box_trending .content {
+    padding: 20px 0;
+    text-align: center;
+    background: #f7f7f7;
+}
+.box_trending .content .trending-tag-6 {
+    color: #0070bb;
+    font-size: 24px;
+}
+.box_trending .content a {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.box_trending .content .trending-tag-4 {
+    color: #ea7a7c;
+    font-size: 29px;
+}
+.box_trending .content .trending-tag-7 {
+    color: #0f408b;
+    font-size: 30px;
+}
+.ad-label {
+    color: #aaa;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    line-height: 1;
+    padding: 6px 0 3px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.dugout-title-bar {
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    padding: 6px 12px;
+    display: flex;
+    overflow: hidden;
+}
+.dugout-title-bar__link {
+    color: #222;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+}
+.dugout-title-bar__icon {
+    width: 30px!important;
+    height: 30px!important;
+}
+.dugout-title-bar__title {
+    max-height: 40px;
+    padding: 0 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.sticky {
+    position: sticky;
+    top: 55px;
+    z-index: 5;
+    border-radius: 5px;
+}
+.box_textlink {
+    border: 1px solid #ddd;
+    border-top: 1px solid #c12c2e;
+}
+.box_textlink .caption-3 {
+    color: #c12c2e;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+.box_textlink .caption-3 i {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.box_textlink .list_link {
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_textlink .list_link li {
+    flex: 1 0 0;
+    padding: 10px 15px;
+}
+.caption-more-detail .caption {
+    border-bottom: 1px solid #254892;
+    height: 22px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.caption-more-detail .caption .title {
+    padding: 0 10px;
+    background-color: #0f408b;
+    position: relative;
+}
+.caption-more-detail .caption .title:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 45%;
+    top: 0;
+    width: 200px;
+    box-sizing: border-box;
+    height: 23px;
+    background: url(https://cdn-img.thethao247.vn/frontend/images/bg-min.svg?v=1) left -839px no-repeat;
+}
+.caption-more-detail .caption .title span {
+    z-index: 1;
+    position: relative;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+}
+.box_latest_more li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.box_latest_more li .thumb {
+    width: 196px;
+    margin-right: 15px;
+    position: relative;
+}
+.box_latest_more li .text {
+    flex: 1 0 0;
+}
+.box_latest_more li .text .title {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    overflow: hidden;
+}
+.box_latest_more li .text .sapo {
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+    line-height: 1.45;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+a:hover {
+    color: #0085de;
+}
+.btn_loadmore {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    background: #f2f2f2;
+    color: #292929;
+    border: 1px solid #e7e5e5;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+}
+#ad_hover img {
+    transition: filter 0.3s;
+}
+#ad_hover:hover  img{
+    filter: brightness(1.2); 
 }
